@@ -1,5 +1,7 @@
 package com.tutorial.billspliter.models;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+
 import java.util.ArrayList;
 
 public class InputItem {
@@ -8,11 +10,7 @@ public class InputItem {
     public Integer quantity;
     public ArrayList<InputUser> users;
 
-    // This constructor is used by jackson for deserializing JSON to InputItem
-    public InputItem() {
-        super();
-    }
-
+    @JsonCreator
     public InputItem(String name, Double price, Integer quantity, ArrayList<InputUser> users) {
         super();
         this.name = name;

@@ -1,7 +1,7 @@
 package com.tutorial.billspliter.models;
 
 public class SlimOutputUser {
-    String name;
+    public String name;
 
     public SlimOutputUser(String name) {
         this.name = name;

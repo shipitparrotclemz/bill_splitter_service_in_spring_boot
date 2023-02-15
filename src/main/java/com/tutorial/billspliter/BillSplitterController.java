@@ -18,10 +18,7 @@ public class BillSplitterController {
     }
 
     @GetMapping("/splitbill")
-    public ArrayList<OutputUser> splitBill(@RequestBody InputItem item) {
-        ArrayList<InputItem> items = new ArrayList<InputItem>();
-        items.add(item);
-        ArrayList<OutputUser> output = BillSplitterService.splitBill(items);
-        return output;
+    public ArrayList<OutputUser> splitBill(@RequestBody ArrayList<InputItem> items) {
+        return BillSplitterService.splitBill(items);
     }
 }

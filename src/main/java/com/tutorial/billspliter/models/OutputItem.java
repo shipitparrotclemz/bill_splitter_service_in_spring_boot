@@ -3,10 +3,10 @@ package com.tutorial.billspliter.models;
 import java.util.ArrayList;
 
 public class OutputItem {
-    String name;
-    Double price;
-    Integer quantity;
-    ArrayList<SlimOutputUser> users;
+    public String name;
+    public Double price;
+    public Integer quantity;
+    public ArrayList<SlimOutputUser> users;
 
     public OutputItem(String name, Double price, Integer quantity, ArrayList<SlimOutputUser> users) {
         this.name = name;
